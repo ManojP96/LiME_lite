@@ -171,7 +171,7 @@ if st.button("Build Models"):
       # st.write(positive_coeff)
       # st.write(model_possitive)
       pvalues=[var for var in list(model.pvalues) if var<=0.06]
-      if (set(positive_coeff).issubset(set(model_possitive))) and (set(negetive_coeff).issubset(model_negatives)) and (len(pvalues)/len(selected_features))>=0.5:
+      if (set(positive_coeff).issubset(set(model_possitive))) and (set(negetive_coeff).issubset(model_negatives)) and (len(pvalues)/len(selected_features))>=0.2:
 
 
           predicted_values = model.predict(X)
