@@ -181,7 +181,7 @@ if st.button("Build Models"):
           filename = os.path.join(save_path, f"model_{i}.pkl")
           with open(filename, "wb") as f:
             pickle.dump(model, f)
-          # with open(r"C:\Users\ManojP\Documents\MMM\simopt\Model\model.pkl", 'rb') as file:
+          # with open(r"Model\model.pkl", 'rb') as file:
           #   model = pickle.load(file)
 
           st.session_state['Model_results']['Model_object'].append(filename)
