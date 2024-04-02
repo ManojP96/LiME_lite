@@ -325,7 +325,7 @@ if st.checkbox('Show results of top 10 models (based on MAPE and Adj. R2)',value
     # Display the plot in Streamlit
     st.pyplot(fig)
     value=False
-    if st.checkbox('Use this model to build response curves',key='build_rc_cb'):
+    if st.checkbox('Use this model to tune',key='build_rc_cb'):
       mod_name=st.text_input('Enter model name')
       if len(mod_name)>0:
         st.session_state['Model'][mod_name]={"Model_object":model,'feature_set':st.session_state['features_set'],'X':st.session_state['X']}
